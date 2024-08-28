@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="images">
+    <div class="converter">
+        <h1>Temperature Converter</h1>
+        <p>Temperature degrees conversions of <a href="#">Fahrenheit (°F)</a>, <a href="#">Celsius (°C)</a>, <a href="#">Kelvin (K)</a>, <a href="#">Rankine (°R)</a></p>
+        
+        <input type="text" id="temperature" placeholder="Enter degrees">
+        
+        <div class="dropdown-section">
+            <div class="dropdown">
+                <label for="from">From</label>
+                <select id="from">
+                    <option value="none">--</option>
+                    <option value="C">Celsius (°C)</option>
+                    <option value="F">Fahrenheit (°F)</option>
+                    <option value="K">Kelvin (K)</option>
+                    <option value="R">Rankine (°R)</option>
+                </select>
+            </div>
+            <div class="dropdown">
+                <label for="to">To</label>
+                <select id="to">
+                    <option value="none">--</option>
+                    <option value="C">Celsius (°C)</option>
+                    <option value="F">Fahrenheit (°F)</option>
+                    <option value="K">Kelvin (K)</option>
+                    <option value="R">Rankine (°R)</option>
+                </select>
+            </div>
+        </div>
+        
+        <button onclick="convert()">Convert</button>
+        <p id="result"></p>
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
